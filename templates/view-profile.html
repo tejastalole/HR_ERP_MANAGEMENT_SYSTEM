@@ -1,0 +1,57 @@
+{% include 'admin-header.html' %}
+
+
+            <form action="/admin-emp-update" method="POST">
+            <div id="login-form1">
+                <h2>Employee Profile</h2>
+
+                {% for n in gather_data %}
+
+                <label for="EmpId1" id="nameLabel">Emp Id : </label>
+                <input type="number" value="{{ n[0] }}" name="txtempId" id="EmpId1">
+                <br><br>
+                <label for="NameId1" id="nameLabel">Name : </label>
+                <input type="text" value="{{ n[1] }}" name="txtName" id="NameId1">
+                <br><br>
+                <label for="EmailId1" id="nameLabel">Email : </label>
+                <input type="email" value="{{ n[2] }}" name="txtEmail" id="EmailId1"> 
+                <br><br>
+                <label for="MobileId1" id="nameLabel">Mobile : </label>
+                <input type="number" value="{{ n[3] }}" name="txtMobile" id="MobileId1"> 
+                <br><br>
+                <label for="DesignationId1" id="nameLabel">Designation : </label>
+                <input type="text" value="{{ n[4] }}" name="txtDesignation" id="DesignationId1"> 
+                <br><br>
+                <label for="SalaryId1" id="nameLabel">Salary : </label>
+                <input type="number" value="{{ n[5] }}" name="txtSalary" id="SalaryId1"> 
+                <br><br>
+
+                
+
+                <input type="submit" value="Update" name="btnLogin" id="RegisterId1">
+                
+                <a href="/admin-emp-delete?id={{ n[0] }}" id="RegisterId2">Delete</a>
+                
+                {% endfor %}
+
+            </div>
+        </form>
+
+        <!-- <form action="/admin-emp-delete" method="POST">
+            <input type="submit" value="Delete" name="btnLogin" id="RegisterId2">
+        </form> -->
+        
+
+        <div id="side-bar">
+            <img src="/static/img/admin.png" alt="">
+            <span id="admin-text">Administration</span>
+        </div>
+
+        
+
+
+    </div>
+
+    <p id="footer-text">Copyright &copy; 2025 Designed by Tejas Talole. All rights reserved.</p>
+</body>
+</html>

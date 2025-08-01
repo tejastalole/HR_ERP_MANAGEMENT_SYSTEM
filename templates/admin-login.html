@@ -1,0 +1,130 @@
+<style>
+    font {
+        color: red;
+        position: relative;
+        top: 25px;
+        left: 190px;
+    }
+
+    #side-bar-dashboard {
+        background-color: #e6ffdd;
+        position: relative;
+        bottom: 446px;
+        left: 720px;
+        height: 500px;
+        width: 240px;
+    }
+
+    #usernameId-admin, #passwordId-admin {
+        height: 30px;
+        width: 180px;
+        margin-top: 10px;
+        position: relative;
+        top: 30px;
+        left: 82px;
+        color: black;
+        font-weight: bold;
+        width: 250px;;       
+    }
+
+    #usernameId-admin {
+        position: relative;
+        left: 75px;
+    }
+
+    #notice-text-1 {
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+        left: 20px;
+        top: 50px;
+        color: grey;
+    }
+    
+    #notice-desc-1 {
+        position: relative;
+        font-size: 12px;
+        left: 20px;
+        width: 200px;
+        top: 50px;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+
+    #notice-text-2 {
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+        left: 20px;
+        top: 70px;
+        color: grey;
+    }
+    
+    #notice-desc-2 {
+        position: relative;
+        font-size: 12px;
+        left: 20px;
+        width: 200px;
+        top: 70px;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+    
+
+</style>
+
+{% include 'header.html' %}
+
+    <form action="/admin-dashboard" method="POST">
+        <div id="login-form">
+            <h2>Welcome to Admin Login</h2>
+
+            <label for="usernameId">Username : </label>
+            <input type="text" name="txtUsername" id="usernameId-admin">
+
+            <br><br>
+
+            <label for="passwordId">Password : </label>
+            <input type="password" name="txtPassword" id="passwordId-admin"> 
+
+            <br><br>
+
+            <input type="submit" value="Login" name="btnLogin" id="loginId">
+            <input type="reset" value="Cancel" name="btnCancel" id="cancelId">
+            <br><br>
+            
+            <font>{{message}}</font>
+            
+        </div>
+    </form>
+    
+            
+
+        
+
+        <div id="side-bar-dashboard">
+            <!-- <img src="/static/img/admin-icon.png" alt="">
+            <span id="admin-text">Administration</span> -->
+            <span id="notice-text">Project Overview</span>
+            <p id="notice-desc">This is a Simple HR ERP SYSTEM web app where admin can add employee, edit employee, delete employee and search employee</p>
+
+            <span id="notice-text-1">Technology Used</span>
+            <p id="notice-desc-1">In this project i used several technologies for frontend i used Html, Css and for backend i used Python, Jinja and for database i used Sql</p>
+
+            <span id="notice-text-2">Project Information</span>
+            <p id="notice-desc-2">This hr erp system web app helps to store employee record also extra features are included in this project such as edit, delete, add emplyee and also added admin authentication</p>
+
+        </div>
+
+        
+
+
+    </div>
+
+    <p id="footer-text">Copyright &copy; 2025 Designed by Tejas Talole. All rights reserved.</p>
+</body>
+</html>

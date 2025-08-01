@@ -1,0 +1,74 @@
+<style>
+
+    #searchlabel {
+        position: relative;
+        top: 30px;
+        left: 35px;
+    }
+
+    #searchId {
+        position: relative;
+        top: 30px;
+        left: 35px;
+        padding: 7px 0px;
+        color: black;
+        font-weight: bold;
+        width: 300px;
+    }
+
+    #search-button {
+        padding: 0px 20px;
+        height: 34px;
+        color: white;
+        background-color: #007bff;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        left: 40px;
+        top: 30px;
+        cursor: pointer;
+    }
+
+    #search-button:hover {
+        background-color: #1184ff;
+    }
+
+
+
+</style>
+
+{% include 'admin-header.html' %}
+
+        <div id="login-form">
+            <h2>Search Employee</h2>
+
+            
+        <form action="/admin-emp-searchprocess" method="POST">
+
+            <label for="txtName" id="searchlabel">Enter the Name :</label>
+            <input type="text" id="searchId" name="txtName">
+
+            <input type="submit" value="Search" id="search-button">
+        </form>
+
+        </div>
+    
+
+            
+
+        
+
+        <div id="side-bar">
+            <img src="/static/img/admin.png" alt="">
+            <span id="admin-text">Administration</span>
+        </div>
+
+        
+
+
+    </div>
+
+    <p id="footer-text">Copyright &copy; 2025 Designed by Tejas Talole. All rights reserved.</p>
+</body>
+</html>

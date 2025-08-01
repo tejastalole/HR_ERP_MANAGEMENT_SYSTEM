@@ -1,0 +1,42 @@
+<style>
+        #session-text {
+            color: white;
+            position: relative;
+            bottom: 320px;
+            left: 50px;
+        }
+
+        #side-bar-dash {
+            background-color: #e6ffdd;
+            position: relative;
+            bottom: 449px;
+            left: 720px;
+            height: 500px;
+            width: 240px;
+        }
+</style>
+
+{% include 'admin-header.html' %}
+
+        <div id="login-form">
+            <h2>Welcome to Admin Dashboard</h2>
+        </div>
+    
+        <span id="session-text"> Welcome {{session['name']}}</span>
+       
+
+        
+
+        <div id="side-bar-dash">
+            <img src="/static/img/admin.png" alt="">
+            <span id="admin-text">Administration</span>
+        </div>
+
+        
+
+
+    </div>
+
+    <p id="footer-text">Copyright &copy; 2025 Designed by Tejas Talole. All rights reserved.</p>
+</body>
+</html>

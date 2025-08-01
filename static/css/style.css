@@ -1,0 +1,272 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container {
+    background-color: #a8dadc;
+    height: 40em;
+    width: 60em;
+    margin: 50px auto 0px;
+    border: 2px solid darkblue;
+    box-shadow: 0px 0px 20px 5px rgba(133, 133, 133, 0.5);
+}
+
+#header-nav {
+    height: 90px;
+    background-color: #457b9d;
+}
+
+#header-text {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    top: 27px;
+    left: 310px;
+}
+
+nav {
+    background-color: #1d3557;
+    width: 100%;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    margin-top: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15.5px 20px;
+    position: relative;
+    right: 30px;
+}
+
+a:hover {
+    background-color: rgba(92, 92, 117, 0.3);
+}
+
+h2 {
+    margin-top: 30px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    color: white;
+}
+
+#login-form {
+    background-color: #283b548b;
+    width: 650px;
+    height: 400px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+#side-bar {
+    background-color: #e6ffdd;
+    position: relative;
+    bottom: 430px;
+    left: 720px;
+    height: 500px;
+    width: 240px;
+}
+
+#notice-text {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    left: 20px;
+    top: 30px;
+    color: grey;
+}
+
+#notice-desc {
+    position: relative;
+    font-size: 12px;
+    left: 20px;
+    width: 200px;
+    top: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    border: 1px solid white;
+    position: relative;
+    left: 60px;
+    top: 30px;
+}
+
+#admin-text {
+    position: relative;
+    left: 53px;
+    top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 18px;
+    position: relative;
+    left: 70px;
+    top: 30px;
+    color: white;
+}
+
+#usernameId, #passwordId {
+    height: 25px;
+    width: 180px;
+    margin-top: 10px;
+    position: relative;
+    top: 30px;
+    left: 75px;
+    color: black;
+    font-weight: bold;
+    width: 250px;;
+    
+}
+
+#passwordId {
+    margin-left: 7px;
+}
+
+#loginId, #cancelId {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: relative;
+    left: 205px;
+    top: 30px;
+}
+
+#loginId:hover, #cancelId:hover {
+    background-color: #1184ff;
+}
+
+#footer-text {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+
+/* admin-add-employee.html */
+
+#login-form1 {
+    background-color: #283b548b;
+    width: 650px;
+    height: 400px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+#nameLabel {
+    font-size: 18px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+    color: white;
+}
+
+#EmpId1, #NameId1, #EmailId1, #MobileId1, #DesignationId1, #SalaryId1 {
+    height: 25px;
+    /* width: 180px; */
+    /* margin-top: 10px; */
+    position: relative;
+    top: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+/* input:focus {
+    border: 1px solid red;
+    outline: none;
+    box-shadow: 0px 0px 5px #ff0000;
+    border-radius: none;
+} */
+
+#EmpId1 {
+    position: relative;
+    left: 84px;
+    width: 400px;
+}
+
+#NameId1 {
+    position: relative;
+    left: 96px;
+    width: 400px;
+}
+
+#EmailId1 {
+    position: relative;
+    left: 98px;
+    width: 400px;
+}
+
+#MobileId1 {
+    position: relative;
+    left: 90px;
+    width: 400px;
+}
+
+#DesignationId1 {
+    position: relative;
+    left: 40px;
+    width: 400px;
+}
+
+#SalaryId1 {
+    position: relative;
+    left: 90px;
+    width: 400px;
+}
+
+#RegisterId1 {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 240px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#RegisterId1:hover {
+    background-color: #1184ff;
+}
+
+#RegisterId2 {
+    padding: 10px 20px; 
+    font-size: smaller;
+    color: white;
+    background-color: #007bff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 245px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#RegisterId2:hover {
+    background-color: #1184ff;
+}
