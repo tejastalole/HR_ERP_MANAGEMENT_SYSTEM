@@ -90,7 +90,7 @@ simple-hr-erp/
 
 **Tejas Talole**  
 Passionate Full Stack Developer | Python Enthusiast  
-📧 your-email@example.com
+📧 tejastalole7@gmail.com
 
 ---
 
